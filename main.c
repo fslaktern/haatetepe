@@ -82,7 +82,6 @@ const char *serve_flag();
 
 /* i couldn't do it without you */
 int main(void) {
-  printf("FLAG=%s\n", getenv("FLAG"));
   run_server();
   return 0;
 }
@@ -310,7 +309,6 @@ const char *serve_flag() {
   if (flag == NULL) {
     flag = "NNS{placeholder}";
   }
-  printf("FLAG=%s\n", flag);
 
   snprintf(message, sizeof(message),
            "Well of course you can have the flag! All you have to do "
