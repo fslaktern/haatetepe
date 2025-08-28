@@ -1,5 +1,5 @@
 build:
-	gcc -o haatetepe -s main.c
+	gcc -static -s -o haatetepe main.c
 
 run: build
 	./haatetepe
